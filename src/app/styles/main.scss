@@ -1,0 +1,49 @@
+@import '@mdi/font/css/materialdesignicons.css';
+
+
+:root {
+  /*
+    Vuetify defines these CSS variables at runtime (on `.v-theme--light` / `.v-theme--dark`).
+    We declare fallbacks here mainly to satisfy IDEs / linters that warn about "unknown CSS custom property".
+    Values are RGB triplets (no `rgb()` wrapper).
+  */
+  --v-theme-surface: 18, 18, 18;
+  --v-theme-on-primary: 255, 255, 255;
+
+  /* Layout vars used by the fixed composer bar */
+  --v-layout-left: 0px;
+  --v-layout-right: 0px;
+  --v-layout-top: 0px;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+  'Courier New', monospace;
+}
+
+.markdown-content {
+  line-height: 1.6;
+}
+
+.markdown-content pre {
+  padding: 12px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.markdown-content code {
+  padding: 2px 6px;
+  border-radius: 6px;
+}
