@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeRedirectPage from '@/pages/home/HomeRedirectPage.vue'
 import NewChatPage from '@/pages/chat/NewChatPage.vue'
@@ -7,7 +7,7 @@ import SettingsPage from '@/pages/settings/SettingsPage.vue'
 import NotFoundPage from '@/pages/notFound/NotFoundPage.vue'
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: HomeRedirectPage },
     { path: '/chats/new', name: 'chat-new', component: NewChatPage },
