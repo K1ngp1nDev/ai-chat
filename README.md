@@ -1,5 +1,7 @@
 # AI Chat (Frontend Test Task)
 
+# https://k1ngp1ndev.github.io/ai-chat
+
 A small **AI Chat** app built with:
 
 - **Vue 3 + TypeScript**
